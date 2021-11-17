@@ -1,0 +1,12 @@
+services:
+  tvmaze.repository:
+    class: Drupal\tvmaze\API\ShowRepository
+    arguments:
+      - '@http_client'
+      - '@cache.tvmaze'
+  cache.tvmaze:
+    class: Drupal\Core\Cache\CacheBackendInterface
+    tags:
+      - { name: cache.bin }
+    factory: ['@cache_factory', 'get']
+    arguments: [tvmaze]

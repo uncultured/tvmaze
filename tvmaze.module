@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations.
+ */
+
+/**
+ * Hook_theme() implementation.
+ */
+function tvmaze_theme() {
+  return [
+    'tvmaze_show' => [
+      'template' => 'tvmaze-show',
+      'variables' => [
+        'show' => NULL,
+      ],
+    ],
+  ];
+}

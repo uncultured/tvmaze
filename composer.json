@@ -1,0 +1,15 @@
+{
+    "name": "drupal/tvmaze",
+    "description": "Browse the TVmaze API for TV shows.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Patrick Wilson"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "drupal/core": "^8.8.0 || ^9.0"
+    }
+}

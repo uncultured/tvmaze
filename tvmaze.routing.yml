@@ -1,0 +1,15 @@
+tvmaze.search:
+  path: '/tvmaze/search/{keywords}'
+  defaults:
+    _controller: '\Drupal\tvmaze\Controller\BrowseController::index'
+    _title: 'TVmaze Search'
+    keywords: ''
+  requirements:
+    _permission: 'access content'
+tvmaze.show:
+  path: '/tvmaze/show/{id}'
+  defaults:
+    _controller: '\Drupal\tvmaze\Controller\BrowseController::show'
+    _title_callback: '\Drupal\tvmaze\Controller\BrowseController::showTitle'
+  requirements:
+    _permission: 'access content'

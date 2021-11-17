@@ -1,0 +1,7 @@
+<img src="{{ show.image.medium }}" />
+{{ show.summary }}
+{% for cast in show.cast %}
+  <h2>{{ cast.character.name }}</h2>
+  <img src="{{ cast.character.image.medium }}" />
+  <h3>{{ cast.person.name }}</h3>
+{% endfor %}
